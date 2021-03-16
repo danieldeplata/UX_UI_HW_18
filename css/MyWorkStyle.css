@@ -1,0 +1,105 @@
+/* Header */
+
+header {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 1000;
+    font-size: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.repeatingTextScroller {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/* Section Content */
+
+h2 {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+section>div {
+    border: 2px solid black;
+    transition: all .2s ease-out;
+}
+
+section>div:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: .5;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 5 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.div3 {
+    grid-area: 3 / 2 / 5 / 3;
+}
+
+.img1 {
+    width: 100%;
+    height: auto;
+}
+
+.img2 {
+    width: 80%;
+    height: auto;
+}
+
+
+/* Bottom Nav */
+
+.nav {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+footer>div {
+    text-align: center;
+    padding: 15px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    transition: all .2s ease-out;
+}
+
+footer>div:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+p {
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}

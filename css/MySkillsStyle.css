@@ -1,0 +1,133 @@
+/* Header */
+
+header {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 1000;
+    font-size: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.repeatingTextScroller {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/* Section Content */
+
+h2 {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.parent {
+    display: grid;
+    grid-template-rows: 4;
+    grid-row-gap: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 10px;
+}
+
+section>div {
+    border: 2px solid black;
+}
+
+
+/* Bottom Nav */
+
+.nav {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+footer>div {
+    text-align: center;
+    padding: 15px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    transition: all .2s ease-out;
+}
+
+footer>div:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+p {
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+@media only screen and (max-width:600px) {
+    /* Header */
+    header {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 1000;
+        font-size: 60px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .repeatingTextScroller {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    /* Section Content */
+    h2 {
+        text-align: center;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 800;
+        font-size: 32px;
+    }
+    .parent {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    section>div {
+        border: 2px solid black;
+    }
+    /* Bottom Nav */
+    .nav {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        height: 200px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    footer>div {
+        text-align: center;
+        padding: 15px;
+        font-family: 'Heebo', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        transition: all .2s ease-out;
+    }
+    footer>div:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        opacity: .5;
+    }
+    p {
+        list-style-type: none;
+        text-align: center;
+        font-family: 'Heebo', sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+    }
+}
